@@ -1,0 +1,13 @@
+1 General client start.Start the system. 
+1.1 - There is comment button below of the design,users can give us a feedback from there
+1.1.1 Second activity - Query screen.Program give hints to user.We aimed to applications will be user friendly. 
+1.1.2 Third activity - Details can be changed,this details are symbolic.
+1.1.3 Four activity - There will be three part of report,first part is general information about detailed car property.Second part gives information to us about internal of car.Third One gives information to us about external of car.First part,system will be reported as painted, altered, damaged, or original in writing, but in the second and third sections, the color will be shown next to them, and blue is good, yellow is medium, and red is bad. 
+1.1.3.1 Five activity - There will be a button to take an action.It wil divided to two more button on screen one is will be download PDF to device which is includes these attributes and other one is to share PDF on somewhere whatsapp,etc. .
+1.2 Sign up activity - Sign in screen.Program give hints to user which is the user enter the input.
+1.2.1 Authentication activity - When enter the sign in button Enter authentication code to come your device.
+1.2.2 Sign up activity - Which is 
+--- Buralara sign uplar gelecek
+ Seven activity - Car service client's homepage.
+ Eight activity - Activity for add new record,authorized staff enter inputs and when she/her save database will be update instantly.
+ Query activity - All clients have same query page like second activity.

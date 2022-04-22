@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "577735753116",
+    "project_id": "centralcarpolicy",
+    "storage_bucket": "centralcarpolicy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577735753116:android:b7d3e71b5d7f98f077dc59",
+        "android_client_info": {
+          "package_name": "com.tolgacobanoglu.admincentralcarpolicy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577735753116-3a1tip52k22cvd0f71ige2t5cpjotbvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkGu--k4zeZUJT3zfo2_pJfqrWGH4Bo0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577735753116-3a1tip52k22cvd0f71ige2t5cpjotbvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577735753116:android:c216f337958160fd77dc59",
+        "android_client_info": {
+          "package_name": "com.tolgacobanoglu.carservicecentralcarpolicy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577735753116-3a1tip52k22cvd0f71ige2t5cpjotbvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkGu--k4zeZUJT3zfo2_pJfqrWGH4Bo0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577735753116-3a1tip52k22cvd0f71ige2t5cpjotbvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_black"
+    tools:context=".view.RemoveLicensePlateActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/remove_license_plate"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/letterGroupInput"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:hint="Letter Group"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityCodeInput" />
+
+    <EditText
+        android:id="@+id/cityCodeInput"
+        android:textColor="@color/black"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="City Code"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/digitGroupInput"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:hint="Digit Group"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letterGroupInput" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="327dp"
+        android:layout_height="134dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/digitGroupInput" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/my_green"
+        android:onClick="removeFromDatabase"
+        android:text="REMOVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

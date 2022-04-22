@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Admin Central Car Policy</string>
+
+    <string name="welcome_title">Welcome, Admin</string>
+    <string name="new_license_plate">NEW</string>
+    <string name="second_hand_license_plate">SECOND HAND</string>
+    <string name="type_title">TYPE OF LICENSE PLATE</string>
+    <string name="remove_license_plate">REMOVE LICENSE PLATE</string>
+</resources>

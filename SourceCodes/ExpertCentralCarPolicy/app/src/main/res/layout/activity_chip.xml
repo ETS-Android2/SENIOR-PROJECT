@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_black"
+    tools:context=".view.ChipActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="ADD NEW RECORD"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cityCodeInput"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/widget_height_size"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="City Code"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/letterGroupInput"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/widget_height_size"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Letter Group"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/digitGroupInput"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/widget_height_size"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="Digit Group"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/externalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="EXTERNAL"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bonnetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="BONNET"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/bonnetChips"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/bonnetFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/frontBumperTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="FRONT BUMPER"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/frontBumperFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/rearBumperTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="REAR BUMPER"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rearBumperFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/leftFrontDoorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="LEFT FRONT DOOR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftFrontDoorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/rightFrontDoorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="RIGHT FRONT DOOR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightFrontDoorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/rightBackDoorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="RIGHT BACK DOOR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightBackDoorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/leftBackDoorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="LEFT BACK DOOR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftBackDoorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/baggageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="BAGGAGE"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggagePaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggageModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggageDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggageSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggageScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/baggageFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/roofTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="ROOF"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/roofFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/leftMirrorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="LEFT MIRROR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/leftMirrorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/rightMirrorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="RIGHT MIRROR"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorPaintedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAINTED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_blue" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorModifiedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFIED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_purple" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorDamagedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DAMAGED"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_red" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorSpottingInChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPOTTING IN"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_gray" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorScratchChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCRATCH"
+                    android:textColor="@color/black"
+                    app:chipBackgroundColor="@color/my_yellow" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rightMirrorFactoryNewChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FACTORY NEW"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/my_green" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/internalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="INTERNAL"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/steeringWheelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="STEERING WHEEL"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="342dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/steeringWheelGoodChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:text="GOOD"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/steeringWheelMediumChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#29b6f6"
+                    android:text="MEDIUM"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/steeringWheelWornChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef5350"
+                    android:text="WORN"
+                    android:textColor="@color/black" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/airConditionsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="AIR CONDITIONS"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="342dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airConditionsGoodChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:text="GOOD"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airConditionsMediumChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#29b6f6"
+                    android:text="MEDIUM"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airConditionsWornChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef5350"
+                    android:text="WORN"
+                    android:textColor="@color/black" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/carUpholsteryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="CAR UPHOLSTERY"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="342dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/carUpholsteryGoodChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:text="GOOD"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/carUpholsteryMediumChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#29b6f6"
+                    android:text="MEDIUM"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/carUpholsteryWornChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef5350"
+                    android:text="WORN"
+                    android:textColor="@color/black" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/headlinerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="HEADLINER"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup4"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="342dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/headlinerGoodChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:text="GOOD"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/headlinerMediumChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#29b6f6"
+                    android:text="MEDIUM"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/headlinerWornChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef5350"
+                    android:text="WORN"
+                    android:textColor="@color/black" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/airbagTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="AIRBAG"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup5"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="342dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airbagNormalChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4caf50"
+                    android:text="NORMAL"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airbagRepairedChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#29b6f6"
+                    android:text="REPAIRED"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/airbagBreakOutChip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef5350"
+                    android:text="BREAK OUT"
+                    android:textColor="@color/black" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/my_green"
+                android:text="SAVE"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

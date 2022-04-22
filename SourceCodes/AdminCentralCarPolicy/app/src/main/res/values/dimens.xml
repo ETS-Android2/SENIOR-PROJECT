@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">325dp</dimen>
+
+    <dimen name="main_activity_button_size">140dp</dimen>
+
+
+    <dimen name="main_activity_welcome_title">40sp</dimen>
+
+
+    <dimen name="margin_main_activity_buttons_external">20dp</dimen>
+
+
+
+
+
+
+</resources>
